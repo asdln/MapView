@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62D3ED1D-4D2E-465A-AF27-6C2788815F18}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\bin\Debug\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+    <IntDir>mapview.dir\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\bin\Release\</OutDir>
+    <IntDir>mapview.dir\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include;C:\Qt\Qt5.6.0\5.6\msvc2013\include;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore;C:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL;.\;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include;./GeneratedFiles;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>D:/OSG_OSGEarth_RCS/gwaldron-osgearth-25ce0e1/build/lib;D:/OSG_OSGEarth_RCS/gwaldron-osgearth-25ce0e1/build/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Debug\osgEarthQtd.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Debug\osgEarthUtild.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Debug\osgEarthAnnotationd.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Debug\osgEarthFeaturesd.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Debug\osgEarthSymbologyd.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Debug\osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgShadowd.lib;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\lib\libcurld.lib;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\lib\zlib.lib;D:\OSG_OSGEarth_RCS\geos-3.5.0\src\geos_i.lib;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\lib\gdal_i.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgManipulatord.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgWidgetd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgUtild.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgSimd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgTerraind.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgDBd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgFXd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgViewerd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgTextd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgGAd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgQtd.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\OpenThreadsd.lib;glu32.lib;opengl32.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5OpenGLd.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Guid.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Cored.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5NetWorkd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include;C:\Qt\Qt5.6.0\5.6\msvc2013\include;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore;C:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL;.\;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>D:/OSG_OSGEarth_RCS/gwaldron-osgearth-25ce0e1/build/lib;D:/OSG_OSGEarth_RCS/gwaldron-osgearth-25ce0e1/build/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Release\osgEarthQt.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Release\osgEarthUtil.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Release\osgEarthAnnotation.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Release\osgEarthFeatures.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Release\osgEarthSymbology.lib;D:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\build\lib\Release\osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgShadow.lib;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\lib\libcurl.lib;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\lib\zlib.lib;D:\OSG_OSGEarth_RCS\geos-3.5.0\src\geos_i.lib;D:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\lib\gdal_i.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgManipulator.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osg.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgWidget.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgUtil.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgSim.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgTerrain.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgDB.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgFX.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgViewer.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgText.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgGA.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\osgQt.lib;D:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\build\lib\OpenThreads.lib;glu32.lib;opengl32.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5OpenGL.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Gui.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Core.lib;C:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5NetWork.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddPlaneMouseHandler.cpp" />
+    <ClCompile Include="Aero2Shp.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_SettingsDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TargetInfoWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SettingsDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TargetInfoWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MyDataManager.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_InputProductDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScaleBarRefresh.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UDPServer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_InputProductDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScaleBarRefresh.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UDPServer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="InputProductDlg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MyManipulator.cpp" />
+    <ClCompile Include="MyPlaceNode.cpp" />
+    <ClCompile Include="ScaleBarRefresh.cpp" />
+    <ClCompile Include="ScreenCapture.cpp" />
+    <ClCompile Include="SettingsDlg.cpp" />
+    <ClCompile Include="TargetInfoWidget.cpp" />
+    <ClCompile Include="UDPServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_MBCS  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles" "-I.\GeneratedFiles"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddPlaneMouseHandler.h" />
+    <ClInclude Include="Aero2Shp.h" />
+    <ClInclude Include="GeneratedFiles\ui_SettingsDlg.h" />
+    <ClInclude Include="GeneratedFiles\ui_TargetInfoWidget.h" />
+    <ClInclude Include="MyDataManager.h" />
+    <ClInclude Include="GeneratedFiles\ui_InputProductDlg.h" />
+    <ClInclude Include="GeneratedFiles\ui_MainWindow.h" />
+    <CustomBuild Include="TargetInfoWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TargetInfoWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_MBCS "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles" "-I.\GeneratedFiles"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TargetInfoWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles"</Command>
+    </CustomBuild>
+    <CustomBuild Include="SettingsDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SettingsDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_MBCS "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles" "-I.\GeneratedFiles"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SettingsDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles"</Command>
+    </CustomBuild>
+    <CustomBuild Include="InputProductDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing InputProductDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_MBCS  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles" "-I.\GeneratedFiles"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing InputProductDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles"</Command>
+    </CustomBuild>
+    <ClInclude Include="MyManipulator.h" />
+    <ClInclude Include="MyPlaceNode.h" />
+    <ClInclude Include="ScreenCapture.h" />
+    <CustomBuild Include="UDPServer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing UDPServer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_MBCS  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles" "-I.\GeneratedFiles"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing UDPServer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ScaleBarRefresh.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ScaleBarRefresh.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -D_MBCS  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles" "-I.\GeneratedFiles"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ScaleBarRefresh.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB  "-ID:\OSG_OSGEarth_RCS\gwaldron-osgearth-25ce0e1\src" "-ID:\OSG_OSGEarth_RCS\OpenSceneGraph-3.4.0\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\.\mkspecs\win32-msvc2013" "-IC:\Qt\Qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-I." "-ID:\OSG_OSGEarth_RCS\3rdParty_VS2013_v120_x86_x64_V9_full\3rdParty_x86_x64\x86\include" "-I.\GeneratedFiles"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindow.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="InputProductDlg.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SettingsDlg.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="TargetInfoWidget.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="msvc2013" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
